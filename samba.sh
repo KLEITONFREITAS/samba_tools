@@ -127,10 +127,10 @@ then
 	cat /etc/group | cut -d: -f1 | grep "$grupo"		
 	if [ $? -eq 0 ]
 		then
-		chgrp $grupo /home/$pasta
-		echo "Pasta" $pasta "criada com sucesso!"
-		echo "Adicionado o Grupo" $grupo "a pasta" $pasta "com sucesso!"
-		cd /home
+		chgrp $grupo /home/$pasta #EM PRODUÇÃO ALTERAR O CAMINHO ONDE OS COMPARTILHAMENTOS SERAM CRIADOS
+		echo "Pasta $pasta criada com sucesso!"
+		echo "Adicionado o Grupo $grupo a pasta $pasta com sucesso!"
+		cd /home #EM PRODUÇÃO COLOCAR CAMINHO ONDE FOI MONTADO A PARTIÇÃO DOS DADOS
 		chmod 770 -R $pasta
 		echo "[$pasta]
 		comment = Pasta $pasta
