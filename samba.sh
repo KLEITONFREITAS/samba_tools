@@ -48,9 +48,9 @@ read -p "Insira o nome do usuário: " usuario
 useradd -M $usuario
 if [ $? -eq 0 ]
 then
-	echo "Insira uma senha para o usuário: " $usuario
+	echo "Insira uma senha para o usuário: $usuario"
 	smbpasswd -a $usuario
-	echo "Usuário " $usuario "criado com Sucesso!"
+	echo "Usuário $usuario criado com Sucesso!"
 else
 	echo "!!! ERROR !!! "
 fi
