@@ -1,11 +1,16 @@
 #!/usr/bin/env bash
-#
-#
-# @author: Kleiton Freitas
-# @email: kleiton.bittencourt@gmail.com
-# @date: 20210622
-# Script para administração de servidores SAMBA SHARE
-#
+## @Programa 
+# 	@name: samba_tools
+#	@versao: 1.0
+#	@Data 22 de Junho de 2021
+# 	
+# 	@Direitos 
+# 		@autor: Kleiton Freitas
+#		@e-mail: kleiton.bittencourt@gmail.com
+#	@Licenca: GNU GENERAL PUBLIC LICENSE Version 3, 29 June 2007 <http://www.gnu.org/licenses/lgpl.txt>
+#	
+#	@Objetivo:
+#		Este script tem como objetivo realizar a administração basica de um servidor Samba Share
 #
 #
 while true; do
