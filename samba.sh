@@ -139,7 +139,7 @@ then
 		browseable = yes
 		create mode = 0770
 		directory mode = 0770
-		valid users = @$grupo " >> /etc/samba/smb.conf.old.old
+		valid users = @$grupo " >> /etc/samba/smb.conf
 		systemctl restart smbd nmbd
 		fi
 else
