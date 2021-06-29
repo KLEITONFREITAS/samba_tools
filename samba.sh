@@ -127,7 +127,7 @@ then
 	cat /etc/group | cut -d: -f1 | grep "$grupo"		
 	if [ $? -eq 0 ]
 		then
-		chgrp $grupo /home/$pasta #EM PRODUÇÃO ALTERAR O CAMINHO ONDE OS COMPARTILHAMENTOS SERAM CRIADOS
+		chgrp $grupo /home/$pasta #EM PRODUÇÃO ALTERAR O CAMINHO ONDE OS COMPARTILHAMENTOS SERÂO CRIADOS
 		echo "Pasta $pasta criada com sucesso!"
 		echo "Adicionado o Grupo $grupo a pasta $pasta com sucesso!"
 		cd /home #EM PRODUÇÃO COLOCAR CAMINHO ONDE FOI MONTADO A PARTIÇÃO DOS DADOS
