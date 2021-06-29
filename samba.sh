@@ -140,6 +140,7 @@ then
 		create mode = 0770
 		directory mode = 0770
 		valid users = @$grupo " >> /etc/samba/smb.conf.old.old
+		systemctl restart smbd nmbd
 		fi
 else
 	echo "!!! ERROR !!! ao Criar a Pasta $pasta "
